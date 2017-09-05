@@ -1,10 +1,11 @@
 'use strict';
 
 import React from 'react';
+import createClass from 'create-react-class'
 
 const DefaultDecorators = [
   {
-    component: React.createClass({
+    component: createClass({
       render() {
         return (
           <button
@@ -31,7 +32,7 @@ const DefaultDecorators = [
     position: 'CenterLeft'
   },
   {
-    component: React.createClass({
+    component: createClass({
       render() {
         return (
           <button
@@ -58,7 +59,7 @@ const DefaultDecorators = [
     position: 'CenterRight'
   },
   {
-    component: React.createClass({
+    component: createClass({
       render() {
         var self = this;
         var indexes = this.getIndexes(self.props.slideCount, self.props.slidesToScroll);
